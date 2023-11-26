@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bamboo's Kitchen</title>
+    <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+/>
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+      integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+      crossorigin=""
+    />
+    <!-- Make sure you put this AFTER Leaflet's CSS -->
+    <script
+      src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+      integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+      crossorigin=""
+    ></script>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/boxicons@latest/css/boxicons.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,600;0,700;0,800;1,300;1,400;1,500&family=Satisfy&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <a href="/" class="logo"><img src="bamboo.jpg" /></a>
+      <nav>
+        <ul class="navlist">
+          <li><a href="#home" class="active">Home</a></li>
+          <li><a href="#aboutus">About Us</a></li>
+          <li><a href="#menu">Our Menu</a></li>
+          <li><a href="#visit">Visit Us</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <section class="section home section-wide" id="home">
+      <div class="home-text">
+        <h1 class="text-accent">Bamboo's Kitchen ...</h1>
+        <h2>Meet, <span>Eat &</span> Enjoy The true taste</h2>
+        <div class="zoom" >
+
+          <a href="./BamboosKitchenMenu.pdf" class="btn">Explore Menu<i class="bx bxs-right-arrow"></i></a>
+          <a class="zomato" href="https://www.zomato.com/kolkata/bamboos-kitchen-barasat" ><img src="./zomato.webp" height="50"> </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section aboutus" id="aboutus">
+      <h1 class="text-accent heading-2 text-center text-xl">About Us ...</h1>
+
+      <div class="text-flow">
+        <p>
+          Welcome to<span> Bamboo's Kitchen</span>, where culinary art meets
+          exceptional flavors.
+        </p>
+        <p>
+          Our cozy eatery is a haven for food enthusiasts, serving delectable
+          dishes crafted from locally sourced ingredients. Experience a fusion
+          of traditional and contemporary cuisine in a warm, inviting
+          atmosphere.
+        </p>
+        <p>Join us for a delightful dining experience like no other.</p>
+      </div>
+    </section>
+
+    <section class="section menu-showcase" id="menu">
+      <h2 class="text-xl text-accent heading-2">Menu Showcase ...</h2>
+
+      <!-- Slider main container -->
+<div class="swiper">
+  <!-- Additional required wrapper -->
+  <div class="swiper-wrapper">
+    <!-- Slides -->
+    <!-- <div class="swiper-slide img-wrapper"><img src="./2020-11-21.jpg"> </div> -->
+    <div class="swiper-slide img-wrapper"><img src="./2021-01-21.jpg"></div>
+    <div class="swiper-slide img-wrapper"><img src="./2021-02-13.jpg"></div>
+    <div class="swiper-slide img-wrapper"><img src="./2021-03-08.jpg"></div>
+  </div>
+ </div>
+</div>
+    </section>
+
+    <section class="section visitus" id="visit">
+      <h2 class="text-xl text-accent heading-2">Visit Us</h2>
+      <div class="visitus-cards">
+        <div class="visitinfo">
+          <h3 class="bold">Barasat, Kolkata<br>Kolkata-700124</h3>
+          <p>Chapadali More<br />Opposite to Senco Gold and Diamond</p>
+          <p>8240269935 / 9007645581</p>
+
+        </div>
+        <div class="visitinfo">
+          <a href="https://www.google.com/maps/place/Bamboos+kitchen/@22.7193635,88.4831167,17z/data=!3m1!4b1!4m6!3m5!1s0x39f8a3b5a36b4179:0x40d0517b34f05ea8!8m2!3d22.7193586!4d88.4856916!16s%2Fg%2F11mw6wjkjv?entry=ttu"><img src="./undraw_breakfast_psiw.svg" alt="plate" /></a>
+        </div>
+        <div class="visitinfo">
+          <h3>Hours</h3>
+          <p>Mon-Fri 11:30-23:30</p>
+          <p>Sat-Sun 11:30-23:30</p>
+        </div>
+      </div>
+    </section>
+
+
+    <section class="section section-wide" id="map"></section>
+
+    <footer>
+      <p>&copy; Bamboo's Kitchen <span id="copyrightyear">2023</span></p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
